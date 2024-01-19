@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <style>
+    .imm {
+      width: 40px;
+    }
+  </style>
+  <body class="d-flex flex-column vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://www.zarla.com/images/zarla-bordo-barca-1x1-2400x2400-20220322-tty9dtdmqhfcmcw8xftr.png?crop=1:1,smart&width=250&dpr=2"
+              alt=""
+              srcset=""
+              class="rounded-5 imm"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sell.html">Vendi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-dark">
+      <div class="container">
+        <div class="row row-cols-2 justify-content-center pt-5" id="big-card">
+          <div class="col">
+            <div class="card h-100">
+              <img src="" class="card-img-top" alt="..." id="img" />
+              <div class="card-body">
+                <h1 class="card-title" id="name"></h1>
+                <h3 id="brand"></h3>
+                <p class="card-text" id="description"></p>
+                <a href="#" class="btn btn-primary" id="price"></a>
+                <a href="#" class="btn btn-success" id="modifica"
+                  >Modifica<i class="bi bi-pencil ps-2"></i
+                ></a>
+                <button type="button" class="btn btn-danger" id="cancella">
+                  Elimina<i class="bi bi-trash3 ps-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="d-flex flex-grow-1 bg-dark flex-column justify-content-end pt-5 text-center"
+    >
+      <div class="pt-5">
+        <i class="text-secondary px-1 bi bi-instagram"></i>
+        <i class="text-secondary px-1 bi bi-threads"></i>
+        <i class="text-secondary px-1 bi bi-facebook"></i>
+        <i class="text-secondary px-1 bi bi-whatsapp"></i>
+        <i class="text-secondary px-1 bi bi-twitter-x"></i>
+        <i class="text-secondary px-1 bi bi-youtube"></i>
+      </div>
+      <p class="text-secondary text-center pt-2 mb-0">
+        <a href="#" class="text-warning fst-italic">barcheamotori@gmail.com</a>
+      </p>
+      <p class="text-center text-secondary fst-italic">
+        Azienda di rivendita natanti dal 19.01.2024
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./details.js"></script>
+  </body>
+</html>
